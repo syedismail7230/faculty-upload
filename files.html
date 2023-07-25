@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+
+#myInput {
+ 
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 20%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #6dabe4;
+  margin-bottom: 12px;
+  border-radius:6px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 5px !important;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid #ddd;
+  font-size: 18px;
+  border-radius:6px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #6dabe4;
+}
+.headder {
+  text-align: center;
+  color: #6dabe4;
+  font-size: 25px;
+  
+}
+
+.button {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  background-color: darken(subtle,5%);
+
+
+}
+.select {
+ 
+  padding-bottom: 20px;
+  border-bottom: 1px solid darken(rain,2%);
+}
+
+.btn {
+  padding: 8px;
+  cursor: pointer;
+  border-width: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+  .btn:hover, .btn:active, .btn:focus {
+    -webkit-box-shadow: 0px 12px 20px -6px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 12px 20px -6px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 12px 20px -6px rgba(0, 0, 0, 0.21); }
+  .btn.btn-primary {
+    background: #6dabe4;
+    border-color: #6dabe4;
+    color: #fff; }
+    .btn.btn-primary:hover, .btn.btn-primary:focus {
+      border-color: #ffff !important;
+      background: #6dabe4 !important; }
+    .btn.btn-primary.btn-link {
+      background: transparent;
+      color: #fff;
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .btn.btn-outline-primary {
+    color: #fff; }
+
+</style>
+</head>
+<body>
+    
+    <div class="headder">
+        
+          <h2>Faculty documents (Admin view)</h2>
+    </div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names / employee ID" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:25%;">Faculty</th>
+    <th style="width:25%;">Employee ID</th>
+    <th style="width:25%;">File type</th>
+    
+    <th style="width:25%;">Download</th>
+  </tr>
+  <tr>
+    <td>Andrew</td>
+    <td>02590915</td>
+    <td>marks sheet</td>
+    
+    <td><a href="#" class="btn btn-primary">Download</a></td>
+      </td>
+  </tr>
+  <tr>
+    <td>lina</td>
+    <td>0259002</td>
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>
+  </tr>
+  <tr>
+    <td>Jhon</td>
+    <td>0224962</td>
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>
+  </tr>
+  <tr>
+    <td>Andrew</td>
+    <td>02590915</td>
+
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>
+  </tr>
+  <tr>
+    <td>Jhon</td>
+    <td>0224962</td>
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>
+  </tr>
+  <tr>
+    <td>lina</td>
+    <td>0259002</td>
+
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+  <tr>
+    <td>jhon</td>
+    <td>0224962</td>
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+  <tr>
+    <td>Andrew</td>
+    <td>02590915</td>
+
+    <td>marks sheet</td>
+    <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+    <tr>
+      <td>Andrew</td>
+      <td>02590915</td>
+  
+      <td>marks sheet</td>
+      <td><a href="#" class="btn btn-primary">Download</a></td>
+    </tr>
+    <tr>
+      <td>Jhon</td>
+      <td>0224962</td>
+      <td>marks sheet</td>
+      <td><a href="#" class="btn btn-primary">Download</a></td>
+    </tr>
+    <tr>
+      <td>lina</td>
+      <td>0259002</td>
+  
+      <td>Report</td>
+      <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+    <tr>
+      <td>jhon</td>
+      <td>0224962</td>
+      <td>marks sheet</td>
+      <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+    <tr>
+      <td>Andrew</td>
+      <td>02590915</td>
+  
+      <td>marks sheet</td>
+      <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+      <tr>
+        <td>Andrew</td>
+        <td>02590915</td>
+    
+        <td>marks sheet</td>
+        <td><a href="#" class="btn btn-primary">Download</a></td>
+      </tr>
+      <tr>
+        <td>Jhon</td>
+        <td>0224962</td>
+        <td>marks sheet</td>
+        <td><a href="#" class="btn btn-primary">Download</a></td>
+      </tr>
+      <tr>
+        <td>lina</td>
+        <td>0259002</td>
+    
+        <td>marks sheet</td>
+        <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+      <tr>
+        <td>jhon</td>
+        <td>0224962</td>
+        <td>marks sheet</td>
+        <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+      <tr>
+        <td>Andrew</td>
+        <td>02590915</td>
+    
+        <td>marks sheet</td>
+        <td><a href="#" class="btn btn-primary">Download</a></td>  </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!--script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script-->
+
+</body>
+</html>
